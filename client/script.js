@@ -1,5 +1,5 @@
 
-import e from 'express';
+//import(e) from 'express';
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 
@@ -126,7 +126,7 @@ const handleSubmit = async (e) => {
   // Povezivanje klienta sa serverom
   // Preuzimanje podataka iz odgovora ai bota
 
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://clone-chatgpt.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
